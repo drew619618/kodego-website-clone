@@ -1,13 +1,7 @@
 @import 'normalize.css';
+@import "./base/_global.css";
+@import "./modules/_container";
 
-body {
-  
-}
-
-a, a:active {
-  text-decoration: none;
-  color: inherit;
-}
 
 .nav{
   float: right;
@@ -15,8 +9,10 @@ a, a:active {
 
 .nav li{
   display: inline-block;
+  margin-right: 1.5em;
 }
 
 .user-links{
   float: right;
 }
+
