@@ -1,10 +1,22 @@
 @import 'normalize.css';
 
 body {
-  color: orange;
+  
 }
 
 a, a:active {
   text-decoration: none;
   color: inherit;
+}
+
+.nav{
+  float: right;
+}
+
+.nav li{
+  display: inline-block;
+}
+
+.user-links{
+  float: right;
 }
