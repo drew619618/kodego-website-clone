@@ -1,13 +1,13 @@
 .container {
-  width: 90%;
-  margin: auto;
-  /* border: 1px solid black; */
+  width: 100%;
+  padding: 1rem;
 
-  &--padded {
-    padding: 1.25rem;
-  }
-
-  &--wide {
+  @mixin atLaptopLarge {
     width: 90%;
+    margin: auto;
+
+    &--padded {
+      padding: 1.25rem;
+    }
   }
 }
