@@ -9,9 +9,36 @@
     }
   }
 
+  &__mobile-nav-toggle {
+    display: none;
+  }
+
   &__mobile-nav-trigger {
-    @mixin atLaptop {
-      display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    width: 1.5rem;
+    height: 3px;
+    background: $mainBlue;
+
+    &::before {
+      position: relative;
+      content: "";
+      display: block;
+      background: $mainBlue;
+      height: 100%;
+      width: 100%;
+      top: -200%;
+    }
+
+    &::after {
+      position: relative;
+      content: "";
+      display: block;
+      background: $mainBlue;
+      height: 100%;
+      width: 100%;
+      top: 100%;
     }
   }
 
