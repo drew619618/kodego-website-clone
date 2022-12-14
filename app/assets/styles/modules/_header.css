@@ -80,6 +80,13 @@
       margin-left: -50%;
     }
 
+    & ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 1.2em;
+    }
+
     @mixin atLaptopLarge {
       display: flex;
       justify-content: space-between;
@@ -96,6 +103,12 @@
   }
 
   &__user-links {
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    & > a:first-of-type {
+      margin-right: 1em;
+    }
+
     @mixin atLaptopLarge {
       width: 14rem;
     }
